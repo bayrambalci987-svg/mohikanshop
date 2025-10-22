@@ -1,0 +1,145 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: #8B4513; /* Kahverengi ton, logoya uyumlu */
+  color: white;
+  padding: 1rem 0;
+}
+
+header .logo {
+  height: 60px;
+  width: auto;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #DAA520; /* Altın sarısı hover */
+}
+
+.hero {
+  background-color: #A0522D; /* Sienna kahverengi */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  background-image: url('images/storefront.jpg'); /* İndirilen mağaza görseli */
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #CD853F; /* Peru kahverengi */
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #DAA520;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #8B4513;
+}
+
+.dark {
+  background-color: #654321; /* Koyu kahverengi */
+  color: white;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.product {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product h3 {
+  color: #8B4513;
+  margin: 10px 0;
+}
+
+.map {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+footer {
+  background-color: #8B4513;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+}
